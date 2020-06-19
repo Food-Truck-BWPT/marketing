@@ -122,3 +122,51 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  width: 100%;
+  height: 2000px;
+  background-color: #323643;
+}
+.topSection {
+  width: auto;
+  height: 750px;
+  display: flex;
+}
+.topSection .rightside {
+  width: 100%;
+}
+.topSection .rightside .appName {
+  font-size: 5rem;
+  text-align: center;
+  align-items: center;
+  padding-top: 12rem;
+  color: #ff570c;
+}
+.topSection .rightside p {
+  color: #ff570c;
+  text-align: center;
+}
+.topSection .rightside .navigation {
+  padding: 0 0 0 26.8rem;
+}
+.topSection .rightside .navigation a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #ff570c;
+  padding: 0.5rem;
+}
+.topSection .rightside .navigation .navigationTop {
+  display: flex;
+  justify-content: center;
+}
+.topSection .rightside .navigation .navigationBottom {
+  display: flex;
+  justify-content: center;
+  padding: 0.2rem 0 0 3.3rem;
+}
+.topSection img {
+  width: 50%;
+  height: 750px;
+  background-image: url(https://images.pexels.com/photos/2089712/pexels-photo-2089712.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=575&w=1200);
+  background-position: center;
+}

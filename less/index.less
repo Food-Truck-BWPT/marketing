@@ -129,12 +129,18 @@ table {
 @grey: #606470;
 @darkgrey: #323643;
 
+.bx () {
+  color: @orange;
+  font-size: 2rem;
+  font-family: Andale Mono;
+}
+
 // * {
 //   outline: 1px solid cyan;
 // }
 body {
   width: 100%;
-  height: 2000px;
+  height: auto;
   background-color: @darkgrey;
 }
 
@@ -145,25 +151,45 @@ body {
 
   .rightside {
     width: 100%;
+    text-align: center;
+    font-family: Arial, sans-serif;
 
     .appName {
+      font-weight: bold;
       font-size: 5rem;
-      text-align: center;
       align-items: center;
       padding-top: 12rem;
       color: @orange;
     }
 
     p {
+      font-family: Andale Mono;
+      line-height: 1.5rem;
+      display: flex;
+      margin-top: 1rem;
+      margin-left: 9rem;
+      margin-right: 9rem;
+      color: @orange;
+      padding-bottom: 2rem;
+      font-size: 1.5rem;
+    }
+
+    button {
+      background-color: @darkgrey;
+      border: 0.01rem solid @orange;
+      border-radius: 1.5rem;
+      padding: 2rem 2rem;
       color: @orange;
       text-align: center;
+      font-size: 1.5rem;
     }
 
     .navigation {
-      padding: 0 0 0 26.8rem;
+      padding: 0 0 0 27.5rem;
+      font-family: Andale Mono;
       a {
         text-decoration: none;
-        font-size: 1.3rem;
+        font-size: 1rem;
         color: @orange;
         padding: 0.5rem;
       }
@@ -176,17 +202,52 @@ body {
       .navigationBottom {
         display: flex;
         justify-content: center;
-        padding: 0.2rem 0 0 3.3rem;
+        padding: 0.2rem 0 0 1.8rem;
       }
     }
   }
   img {
     width: 50%;
     height: 750px;
-    background-image: url(https://images.pexels.com/photos/2089712/pexels-photo-2089712.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=575&w=1200);
     background-position: center;
-    // -webkit-box-shadow: 15px 11px 15px -2px rgba(0, 0, 0, 0.72);
-    // -moz-box-shadow: 15px 11px 15px -2px rgba(0, 0, 0, 0.72);
-    // box-shadow: 15px 11px 15px -2px rgba(0, 0, 0, 0.72);
   }
+}
+
+.bottomSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding-top: 20rem;
+  padding-bottom: 15rem;
+
+  img {
+    padding-top: 2em;
+  }
+
+  .boxes {
+    width: 20rem;
+    height: 20rem;
+
+    h2 {
+      .bx;
+      padding-bottom: 3rem;
+    }
+
+    h3 {
+      .bx;
+    }
+
+    h4 {
+      .bx;
+      padding-bottom: 2rem;
+    }
+  }
+}
+.theFoot {
+  background-color: @orange;
+  height: 5rem;
+  text-align: center;
+  color: @darkgrey;
+  font-size: 3rem;
 }

@@ -2,43 +2,43 @@
 <html lang="en">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="./css/index.css" type="text/css" rel="stylesheet" />
-  <!-- https://images.pexels.com/photos/2553651/pexels-photo-2553651.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260 guy at food truck-->
-  <!-- ?https://images.pexels.com/photos/1766686/pexels-photo-1766686.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260 food truck -->
-  <!-- icons for page -->
-  <!-- <img
-  src="https://img.icons8.com/wired/64/000000/restaurant-menu.png"
-  width="100"
-  height="100"  />
--->
 
   <body>
+    <style>
+      a.button:hover,
+      a:hover {
+        background-color: #606470;
+      }
+    </style>
     <section class="topSection">
       <img
         src="https://images.pexels.com/photos/2089712/pexels-photo-2089712.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=575&w=1200)"
       />
       <div class="rightside">
-        <div class="navigation">
-          <nav class="navigationTop">
-            <a href="#">Home</a>
-            <a href="#">Sign Up</a>
-            <a href="#">Login</a>
-            <a href="#">Menus</a>
-          </nav>
-          <nav class="navigationBottom">
-            <a href="#">Trucks</a>
-            <a href="#">Locations</a>
-            <a href="#">About</a>
-          </nav>
-        </div>
-
-        <h1 class="appName">FoodTruckr</h1>
-        <p>
-          Hungry and on the go? FoodTruckr will help you find your nearest
-          foodtruck. Because we all know that the best food is served from out
-          of a truck!
-        </p>
-
-        <button type="button">Order Now</button>
+        <section id="content">
+          <div class="navigation">
+            <nav class="navigationTop">
+              <a href="#">Home</a>
+              <a href="#">Sign Up</a>
+              <a href="#">Login</a>
+              <a href="#">Menus</a>
+            </nav>
+            <nav class="navigationBottom">
+              <a href="#">Trucks</a>
+              <a href="#">Locations</a>
+              <a href="./about.html">About</a>
+            </nav>
+          </div>
+          <h1 class="appName">FoodTruckr</h1>
+          <section id="mobileShading">
+            <p>
+              Hungry and on the go? FoodTruckr will help you find your nearest
+              foodtruck. Because we all know that the best food is served from
+              out of a truck!
+            </p>
+          </section>
+          <button>Order Now</button>
+        </section>
       </div>
     </section>
     <section class="bottomSection">
@@ -46,6 +46,7 @@
         <h2>Find your Favorite Foods!</h2>
         <img
           src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/18395208121586787144-512.png"
+          alt="Plate Icon"
           height="200"
           width="200"
         />
@@ -54,6 +55,7 @@
         <h3>Check Out Some Menus!</h3>
         <img
           src="https://image.flaticon.com/icons/svg/3080/3080981.svg"
+          alt="Menu Icon"
           height="300"
           width="200"
         />
@@ -62,13 +64,19 @@
         <h4>Order Food Ahead of Time!</h4>
         <img
           src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/580413151530272913-512.png"
+          alt="Bell Icon"
           height="200"
           width="200"
         />
       </div>
     </section>
     <footer class="theFoot">
-      <h5>Le Foot</h5>
+      <nav class="navFooter">
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+        <a href="#">About</a>
+        <a href="#">Locations</a>
+      </nav>
     </footer>
   </body>
 </html>

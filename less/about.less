@@ -128,15 +128,11 @@ table {
 @white: #f7f7f7;
 @grey: #606470;
 @darkgrey: #323643;
-
-.bx () {
-  color: @orange;
-  font-size: 2rem;
-  font-family: Andale Mono;
-}
-
 @mobile: ~"(max-width: 500px)";
 
+// * {
+//   outline: 1px solid cyan;
+// }
 body {
   width: 100%;
   height: auto;
@@ -181,6 +177,53 @@ body {
     @media @mobile {
       padding: 1rem 0 0 0;
       justify-content: space-evenly;
+    }
+  }
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 5rem;
+  font-family: andale mono, sans-serif;
+  font-weight: bold;
+  color: @orange;
+  padding: 4rem 0 4rem 0;
+}
+.aboutTeam {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 4rem;
+  @media @mobile {
+    flex-direction: column;
+  }
+
+  .summary {
+    color: @orange;
+    font-family: andale mono, sans-serif;
+    font-weight: bold;
+    width: 33%;
+
+    @media @mobile {
+      width: 100%;
+    }
+
+    p {
+      font-size: 1.3rem;
+      padding: 0.5rem 0 0.5rem 0;
+    }
+
+    a {
+      font-size: 1rem;
+      text-decoration: none;
+      color: @orange;
+      border-bottom: 0.01rem solid @orange;
+    }
+    .name {
+      font-size: 1.5rem;
+      padding: 3rem 0 1rem 0;
     }
   }
 }

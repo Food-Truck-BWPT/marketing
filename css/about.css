@@ -132,11 +132,17 @@ body {
   padding: 0 0 0 36.25rem;
   font-family: Andale Mono;
 }
+@media (max-width: 800px) {
+  .navigation {
+    width: 100%;
+    padding: 1rem 0 1.3rem 0rem;
+    background-color: #ff570c;
+  }
+}
 @media (max-width: 500px) {
   .navigation {
     width: 100%;
-    padding: 1rem 0 1rem 0;
-    border-bottom: 0.3rem solid #ff570c;
+    padding: 2rem 0 2.3rem 0;
     background-color: #ff570c;
   }
 }
@@ -145,6 +151,17 @@ body {
   font-size: 1rem;
   color: #ff570c;
   padding: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 800px) {
+  .navigation a {
+    width: 100%;
+    color: #323643;
+    padding: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }
 @media (max-width: 500px) {
   .navigation a {

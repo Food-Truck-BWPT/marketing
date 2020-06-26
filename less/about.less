@@ -129,10 +129,8 @@ table {
 @grey: #606470;
 @darkgrey: #323643;
 @mobile: ~"(max-width: 500px)";
+@tablet: ~"(max-width: 800px)";
 
-// * {
-//   outline: 1px solid cyan;
-// }
 body {
   width: 100%;
   height: auto;
@@ -142,10 +140,15 @@ body {
   width: 100%;
   padding: 0 0 0 36.25rem;
   font-family: Andale Mono;
+  @media @tablet {
+    width: 100%;
+    padding: 1rem 0 1.3rem 0rem;
+    background-color: @orange;
+  }
+
   @media @mobile {
     width: 100%;
-    padding: 1rem 0 1rem 0;
-    border-bottom: 0.3rem solid @orange;
+    padding: 2rem 0 2.3rem 0;
     background-color: @orange;
   }
   a {
@@ -153,6 +156,16 @@ body {
     font-size: 1rem;
     color: @orange;
     padding: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+
+    @media @tablet {
+      width: 100%;
+      color: @darkgrey;
+      padding: 1rem 0 1rem 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
 
     @media @mobile {
       padding: 0 0 0 0;

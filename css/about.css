@@ -128,8 +128,7 @@ body {
   background-color: #323643;
 }
 .navigation {
-  width: 100%;
-  padding: 0 0 0 36.25rem;
+  padding: 0 0 0 72.35rem;
   font-family: Andale Mono;
 }
 @media (max-width: 800px) {
@@ -249,8 +248,8 @@ body {
   .theFoot {
     margin-top: 4rem;
     padding: 2rem;
-    border-top: 0.4rem solid #606470;
-    height: 2rem;
+
+    height: 2.4rem;
   }
 }
 .theFoot .navFooter {

@@ -129,9 +129,16 @@ body {
 }
 .topSection {
   width: auto;
-  height: 750px;
+  height: auto;
   display: flex;
 }
+
+@media (max-width: 800px) {
+  .topSection {
+    padding-bottom: 6rem;
+  }
+}
+
 @media (max-width: 500px) {
   .topSection {
     height: auto;
@@ -354,8 +361,7 @@ button a {
   .theFoot {
     margin-top: 4rem;
     padding: 2rem;
-    border-top: 0.4rem solid #606470;
-    height: 2rem;
+    height: 2.4rem;
   }
 }
 .theFoot .navFooter {
